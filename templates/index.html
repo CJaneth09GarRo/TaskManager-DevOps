@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaskManager</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>TaskManager</h1>
+    <p>Las tareas de TechSolutions en un solo lugar.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <h2 id="titulo-form">Nueva tarea</h2>
+      <form id="form">
+        <label>Nombre <input id="nombre" maxlength="120"></label>
+        <label>Descripción <textarea id="descripcion" rows="3"></textarea></label>
+        <div class="fila">
+          <label>Prioridad
+            <select id="prioridad"><option>Alta</option><option selected>Media</option><option>Baja</option></select>
+          </label>
+          <label>Estado
+            <select id="estado"><option>Pendiente</option><option>En proceso</option><option>Terminada</option></select>
+          </label>
+        </div>
+        <div class="fila">
+          <button type="submit" id="guardar">Guardar tarea</button>
+          <button type="button" id="cancelar" class="sec" hidden>Cancelar edición</button>
+        </div>
+        <p id="msg" role="status"></p>
+      </form>
+    </section>
+    <section class="panel">
+      <h2>Tareas</h2>
+      <ul id="lista"></ul>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

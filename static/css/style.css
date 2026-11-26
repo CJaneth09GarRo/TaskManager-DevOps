@@ -1,0 +1,22 @@
+:root{--bg:#eef2f1;--ink:#16302b;--card:#fff;--line:#cfdad7;--main:#0e6b5c;--alta:#c2410c;--media:#b7791f;--baja:#4b7f52}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{background:var(--main);color:#fff;padding:1.5rem 1rem;text-align:center}
+header h1{margin:0;font-size:1.9rem}header p{margin:.2rem 0 0;opacity:.85}
+main{max-width:980px;margin:1.5rem auto;padding:0 1rem;display:grid;gap:1.25rem;grid-template-columns:minmax(0,340px) 1fr;align-items:start}
+@media(max-width:760px){main{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.1rem}
+h2{margin:0 0 .8rem;font-size:1.2rem}
+label{display:block;font-size:.9rem;margin-bottom:.7rem;font-weight:600}
+input,textarea,select{width:100%;padding:.5rem;margin-top:.25rem;border:1px solid var(--line);border-radius:6px;font:inherit}
+:focus-visible{outline:3px solid #f2b705;outline-offset:1px}
+.fila{display:flex;gap:.6rem}.fila label{flex:1}
+button{background:var(--main);color:#fff;border:0;border-radius:6px;padding:.55rem .9rem;font:inherit;cursor:pointer}
+button.sec{background:#e3ebe9;color:var(--ink)}button.peligro{background:#9b1c1c}
+#msg{min-height:1.3rem;margin:.6rem 0 0;font-size:.9rem}.ok{color:var(--baja)}.error{color:#9b1c1c}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+.tarea{border:1px solid var(--line);border-left:6px solid var(--media);border-radius:8px;padding:.8rem;display:grid;gap:.5rem}
+.tarea.alta{border-left-color:var(--alta)}.tarea.baja{border-left-color:var(--baja)}
+.tarea.terminada strong{text-decoration:line-through;opacity:.6}
+.tarea p{margin:.2rem 0;color:#41524e}.badge{font-size:.8rem;font-weight:600}
+.acciones{display:flex;gap:.5rem;flex-wrap:wrap}.acciones select{width:auto;margin:0}
