@@ -25,4 +25,4 @@ pytest               # pruebas
 Plan (Projects e Issues) · Code (ramas y Pull Requests) · CI (`.github/workflows/ci.yml`) · Release `v1.0.0` y artefacto (`entrega.yml`) · Deploy en Render con `gunicorn app:app`.
 
 ## Equipo
-- [Integrante 1] · [Integrante 2] · [Integrante 3]
+- [Integrante 1 : CLAUDIA JANETH GARCIA RODRIGUEZ] · [Integrante 2 : ALDO FERNANDO SOTO SOTO] · [Integrante 3 : ANGEL MELENDEZ VITE]
